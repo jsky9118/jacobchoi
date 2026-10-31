@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jacob Hanwool Choi</title>
+<meta name="description" content="Jacob Hanwool Choi, Palisades Park, New Jersey. Future nurse. Production and Filming Lead for The Wait, a YGLE documentary on Korean immigrants and the language barrier in health care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b2430; --muted:#5b6672; --line:#e3e7ec; --bg:#fbfbf9; --card:#ffffff;
+    --navy:#1f3a5f; --teal:#2e7d7a; --soft:#eef4f8; --accent:#c8553d;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.6}
+  a{color:var(--teal)}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header.top{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{font-family:Inter,system-ui,sans-serif;font-weight:600;letter-spacing:.02em;color:var(--navy);text-decoration:none;font-size:15px}
+  nav a{font-family:Inter,system-ui,sans-serif;font-size:14px;color:var(--muted);text-decoration:none;margin-left:18px}
+  nav a:hover{color:var(--navy)}
+  .hero{padding:72px 0 48px}
+  .eyebrow{font-family:Inter,system-ui,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:0 0 14px}
+  h1{font-size:clamp(38px,6vw,60px);line-height:1.05;margin:0 0 18px;font-weight:600;letter-spacing:-.01em}
+  .lede{font-size:22px;max-width:720px;margin:0 0 26px;color:#2a3440}
+  .meta{font-family:Inter,system-ui,sans-serif;font-size:14px;color:var(--muted)}
+  .meta span{margin-right:16px}
+  .btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{font-family:Inter,system-ui,sans-serif;font-size:14px;font-weight:600;text-decoration:none;padding:11px 18px;border-radius:8px;border:1px solid var(--navy);color:var(--navy);background:#fff}
+  .btn.primary{background:var(--navy);color:#fff}
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:30px;margin:0 0 6px;font-weight:600;color:var(--navy)}
+  .sub{color:var(--muted);margin:0 0 28px;font-size:17px}
+  .video{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.12)}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--navy)}
+  .card p{margin:0 0 10px;font-size:16px}
+  .card .role{font-family:Inter,system-ui,sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:8px}
+  .strip{margin:26px 0 8px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+  .strip img{width:100%;display:block}
+  .cap{font-family:Inter,system-ui,sans-serif;font-size:13px;color:var(--muted);margin:8px 0 0}
+  .two{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+  @media(max-width:760px){.two{grid-template-columns:1fr}}
+  .flyer{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+  .flyer img{width:100%;display:block}
+  ul.plain{padding-left:20px;margin:0}
+  ul.plain li{margin-bottom:8px}
+  .num{font-family:Inter,system-ui,sans-serif;font-size:34px;font-weight:600;color:var(--navy);line-height:1}
+  .numlabel{font-family:Inter,system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:4px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:26px 0 6px}
+  .stat{background:var(--soft);border-radius:10px;padding:16px 18px}
+  .timeline{list-style:none;padding:0;margin:0}
+  .timeline li{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .timeline li:last-child{border-bottom:0}
+  .when{font-family:Inter,system-ui,sans-serif;font-size:13px;color:var(--muted);padding-top:4px}
+  .timeline b{color:var(--navy)}
+  @media(max-width:600px){.timeline li{grid-template-columns:1fr;gap:4px}}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:22px}
+  .gallery figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+  .gallery figcaption{font-family:Inter,system-ui,sans-serif;font-size:12.5px;color:var(--muted);padding:8px 10px}
+  .hero-photo{margin-top:34px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+  .hero-photo img{width:100%;display:block;max-height:420px;object-fit:cover}
+  footer{padding:40px 0 60px;color:var(--muted);font-family:Inter,system-ui,sans-serif;font-size:13px;border-top:1px solid var(--line)}
+  .quote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:26px 0;font-style:italic;color:#2a3440;font-size:19px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">JACOB H. CHOI</a>
+    <nav>
+      <a href="#thewait">The Wait</a>
+      <a href="#path">Path to nursing</a>
+      <a href="#work">Work &amp; service</a>
+      <a href="#resume">Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Palisades Park, New Jersey · Class of 2027</p>
+    <h1>Jacob Hanwool Choi</h1>
+    <p class="lede">Nobody in my family had been through an American hospital before I translated for them. I am applying to nursing programs so that the next family does not have to bring a ten-year-old.</p>
+    <p class="meta"><span>Palisades Park Jr./Sr. High School</span><span>Intended major: Nursing (BSN)</span><span>First-generation college applicant</span></p>
+    <div class="btns">
+      <a class="btn primary" href="https://www.youtube.com/watch?v=8lQXujgL2L8" target="_blank" rel="noopener">Watch The Wait on YouTube</a>
+      <a class="btn" href="assets/Jacob_Choi_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </div>
+  </div>
+
+  <section id="thewait">
+    <div class="wrap">
+      <h2>The Wait</h2>
+      <p class="sub">A YGLE student documentary, a bilingual hospital card, and two resource flyers for Korean immigrants who put off care because of the language barrier.</p>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/8lQXujgL2L8" title="THE WAIT | A Student Documentary by YGLE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p class="cap"><i>THE WAIT | 당신의 말이 닿을 때까지 | A Student Documentary by YGLE</i>, released October 2026. Jacob was the Production and Filming Lead: filming, camera work, and editing.</p>
+
+      <div class="stats">
+        <div class="stat"><div class="num">300</div><div class="numlabel">cards printed and donated in New Jersey and New York</div></div>
+        <div class="stat"><div class="num">6</div><div class="numlabel">bilingual panels, from an interpreter request to a dental visit</div></div>
+        <div class="stat"><div class="num">2</div><div class="numlabel">reviewers: a registered nurse (medical) and a dentist (dental)</div></div>
+        <div class="stat"><div class="num">Oct 17</div><div class="numlabel">booth at the Korean Community Center in Tenafly</div></div>
+      </div>
+
+      <div class="strip"><img src="assets/card-1.png" alt="The Wait patient communication card, six panels in Korean and English"></div>
+      <p class="cap">The patient communication card. Patients can point to a panel to request an interpreter, describe symptoms and pain, or explain a dental problem. The team reviewed its design together; medical content was reviewed by Sarah Gun, BSN, RN, and dental content by Junhyck Kim, DDS (September 2026). <a href="assets/THE_WAIT_Card.pdf" target="_blank" rel="noopener">Download the card (PDF)</a>.</p>
+
+      <div class="two" style="margin-top:34px">
+        <div>
+          <h3 style="margin:0 0 10px;color:var(--navy);font-size:21px">What happened in Tenafly</h3>
+          <p>On October 17, 2026, Jacob and two teammates ran the project’s booth at the Korean Community Center in Tenafly. They handed cards to Korean seniors, many of whom described appointments they had been putting off, spoke with Tenafly’s mayor, and took requests for cards from translation services, elder support groups, and other organizations.</p>
+          <p>The team also produced two large-print flyers, in Korean and English, listing free and low-cost health screening and dental services in Bergen County, with phone numbers and a note on where Korean interpretation is available. <a href="assets/THE_WAIT_Flyers.pdf" target="_blank" rel="noopener">Download the flyers (PDF)</a>.</p>
+        </div>
+        <div class="flyer"><img src="assets/flyer-1.png" alt="The Wait health screening and support services flyer, Korean and English"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="path">
+    <div class="wrap">
+      <h2>Path to nursing</h2>
+      <p class="sub">Three places where Jacob learned to notice the patient who has gone quiet.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="role">Since childhood</div>
+          <h3>Interpreter for his parents</h3>
+          <p>Jacob has carried his parents’ symptoms to their doctors, and the instructions back, since he was small. He learned early how much of a visit is lost when a patient decides it is easier to answer yes or no than to explain.</p>
+        </div>
+        <div class="card">
+          <div class="role">Summers since 2023</div>
+          <h3>Lifeguard and swim coach</h3>
+          <p>American Red Cross certified in Lifeguarding (Including Deep Water), CPR/AED for Professional Rescuers, and First Aid, valid through May 2028. Paid swim instructor and private coach since 2025.</p>
+        </div>
+        <div class="card">
+          <div class="role">April 2026 to present</div>
+          <h3>Englewood Hospital</h3>
+          <p>Patient and visitor guide at a six-time Magnet hospital. Jacob walks patients to the right department, learns what each unit does, and watches nursing teams at work.</p>
+        </div>
+        <div class="card">
+          <div class="role">2025 to present</div>
+          <h3>Medical research</h3>
+          <p>Mentored by a Johns Hopkins biostatistician, Jacob is comparing treatments for fungal and bacterial otitis externa across published studies. Paper in progress.</p>
+        </div>
+      </div>
+      <p class="quote">Intended study: nursing, with an interest in orthopedic and rehabilitative care.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Leadership, service, and work</h2>
+      <p class="sub">Most of it in Bergen County, most of it every week.</p>
+      <ul class="timeline">
+        <li><div class="when">2025 to present</div><div><b>Donation Coordinator, CDHW</b> (Clothing Donations to Help Kids in the World). Intake, sorting, and delivery visits for new clothing to pediatric patients at New Jersey hospitals, including Hackensack University Medical Center. The program gave more than $15,000 in new clothing in 2025.</div></li>
+        <li><div class="when">2025 to present</div><div><b>Wellness Resources Lead, VOY</b> (Voices of the Young). Keeps the mental health resources and crisis contacts in the Mo Soop peer support app and the Mo Ri ADHD app up to date, with review by a licensed professional.</div></li>
+        <li><div class="when">2025 to present</div><div><b>Director of Communications, YGLE</b> (Young Global Leaders of the East). Outreach and messaging, and recruiting for the annual Global Leadership Forum.</div></li>
+        <li><div class="when">2025 to present</div><div><b>Leading Mentor and Tutor, Walk Alongside.</b> Coordinates the tutor schedule for a free tutoring, mentoring, and SAT prep program and tutors students who cannot afford private help.</div></li>
+        <li><div class="when">2023 to present</div><div><b>Volunteer, Neighbor Plus.</b> Saturday meal service every week since ninth grade; several hundred documented hours. President’s Volunteer Service Award, Gold (2024); Neighbor Plus Volunteer Service Award, Silver (2025).</div></li>
+        <li><div class="when">2024 to present</div><div><b>Student Volunteer, LiNK North Jersey Rescue Team.</b> Awareness events and fundraisers for North Korean refugees.</div></li>
+        <li><div class="when">2023 to present</div><div><b>Varsity and club swimming.</b> All-Conference, two seasons; Second Team All-League (2025); state championship competitor; year-round with Rebels Aquatic Club.</div></li>
+      </ul>
+
+      <h3 style="margin:36px 0 4px;color:var(--navy);font-size:21px">Saturdays at Neighbor Plus</h3>
+      <p class="sub" style="margin-bottom:0">Packing meals in the morning, then handing them out on the street. Every week since ninth grade.</p>
+      <div class="gallery">
+        <figure><img src="assets/photos/np-bags.jpg" alt="Jacob carrying a tray of packed meal bags at Neighbor Plus"><figcaption>Carrying the morning’s bags out.</figcaption></figure>
+        <figure><img src="assets/photos/np-packing.jpg" alt="Volunteers packing meal bags on long tables"><figcaption>Packing meals with the Saturday crew.</figcaption></figure>
+        <figure><img src="assets/photos/np-street.jpg" alt="A volunteer handing a meal bag to a neighbor on the sidewalk"><figcaption>Handing out meals in town.</figcaption></figure>
+        <figure><img src="assets/photos/np-handoff.jpg" alt="Volunteers handing meal bags to neighbors outside a storefront"><figcaption>Meals go out the same morning they are packed.</figcaption></figure>
+      </div>
+
+      <h3 style="margin:36px 0 4px;color:var(--navy);font-size:21px">In the water</h3>
+      <p class="sub" style="margin-bottom:0">Varsity and club swimmer, lifeguard, and swim instructor at Palisades Park Swim Club.</p>
+      <div class="gallery">
+        <figure><img src="assets/photos/swim-podium.jpg" alt="Jacob on the podium with teammates after a swim meet"><figcaption>On the podium.</figcaption></figure>
+        <figure><img src="assets/photos/swim-team.jpg" alt="The Leonia and Palisades Park swim team in the pool after a championship meet"><figcaption>Team photo after a championship meet.</figcaption></figure>
+        <figure><img src="assets/photos/pool.jpg" alt="The outdoor pool and lifeguard stand where Jacob works in summer"><figcaption>Summer office: the lifeguard stand.</figcaption></figure>
+        <figure><img src="assets/photos/swim-lessons.jpg" alt="Palisades Park Swim Club swim lessons flyer listing Jacob as an instructor"><figcaption>Listed as an instructor on the club’s swim lesson flyer.</figcaption></figure>
+      </div>
+
+      <h3 style="margin:36px 0 4px;color:var(--navy);font-size:21px">Korean Honor Society</h3>
+      <div class="gallery">
+        <figure><img src="assets/photos/khs-induction.jpg" alt="Korean Honor Society inductees holding certificates on stage"><figcaption>Induction ceremony.</figcaption></figure>
+        <figure><img src="assets/photos/khs-stage.jpg" alt="Students seated on stage at the Korean Honor Society and National Honor Society ceremony"><figcaption>Korean Honor Society and National Honor Society ceremony.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="wrap">
+      <h2>Résumé and recognition</h2>
+      <p class="sub">College Board National Recognition Program, First-Generation and School Recognition Awards (2026) · Scholastic Art and Writing Awards, Honorable Mention (2026) · Korean Honor Society · Principal’s List · Honor Roll · Engineering Academy, Palisades Park Jr./Sr. High School</p>
+      <div class="btns">
+        <a class="btn primary" href="assets/Jacob_Choi_Resume.pdf" target="_blank" rel="noopener">Download résumé (PDF)</a>
+        <a class="btn" href="mailto:jacob.choi47526@gmail.com">jacob.choi47526@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Jacob Hanwool Choi · Palisades Park, New Jersey · The Wait is a project of YGLE (Young Global Leaders of the East). The card and flyers list existing services and are not medical advice.</div>
+</footer>
+
+</body>
+</html>
